@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package filetransfer;
+
+option go_package="github.com/BaLa071";
+
+service FileTransferService {
+    rpc transferFile(Request)returns(Response);
+}
+
+message Request {
+    string fileName=1;
+}
+
+message Response{
+    string id=1;
+}
