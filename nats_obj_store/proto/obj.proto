@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package kv_grpc;
+
+option go_package = "github.com/umamaheswari76";
+
+service ObjGrpcService {
+    rpc GetFile(GetFileRequest) returns (GetFileResponse);
+}
+
+message GetFileRequest {
+    string FileName = 1;
+}
+
+message GetFileResponse {
+    string FileID = 1;
+}
+
+
