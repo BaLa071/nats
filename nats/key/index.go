@@ -6,7 +6,7 @@ import (
 
 	"github.com/nats-io/nats.go"
 )
-
+//this file is not need for basic nats pushlisg and subscribe .....
 func main() {
 	// config.CreateServer()
 	nc, err := nats.Connect("nats://0.0.0.0:4222")
